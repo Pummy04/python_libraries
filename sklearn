@@ -1,0 +1,46 @@
+🧑‍💻 What is Scikit-learn (sklearn)?
+Scikit-learn is an open-source machine learning library for Python.
+It is built on top of NumPy, SciPy, and Matplotlib.
+It provides simple and efficient tools for:
+Data mining
+Data analysis
+Machine learning models
+
+✅ It is widely used in both academic projects and industry-level machine learning tasks.
+
+📦 Key Features of Scikit-learn
+Supervised learning algorithms
+Unsupervised learning algorithms
+Model selection and evaluation
+Preprocessing data
+Pipelines for building workflows
+
+🔥 Major Components of Sklearn
+1. Supervised Learning
+Classification: Predict categories (e.g., spam or not spam)
+Algorithms: LogisticRegression, KNeighborsClassifier, SVC, RandomForestClassifier
+Regression: Predict continuous values (e.g., price of a house)
+Algorithms: LinearRegression, Ridge, Lasso, SVR
+
+2. Unsupervised Learning
+Clustering: Grouping similar data (e.g., customer segmentation)
+Algorithms: KMeans, DBSCAN
+Dimensionality Reduction: Reduce number of features
+Algorithms: PCA, t-SNE
+
+3. Model Selection
+Train/Test Split: train_test_split
+Cross-Validation: cross_val_score
+Grid Search: GridSearchCV for hyperparameter tuning
+
+4. Preprocessing
+Scaling: StandardScaler, MinMaxScaler
+Encoding: LabelEncoder, OneHotEncoder
+Missing Values: SimpleImputer
+
+5. Pipelines
+Combine preprocessing and model in a single workflow using Pipeline.
+
+⚙️ Basic Workflow in Sklearn
+Import library
+from sklearn.linear_model import LogisticRegression
