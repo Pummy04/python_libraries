@@ -1,0 +1,28 @@
+📚 Dask Library (Theory Explanation)
+What is Dask?
+Dask is a parallel computing library in Python.
+It helps you process big data by breaking it into smaller chunks and using multiple cores (or even multiple machines).
+
+🔥 Think of Dask as:
+
+🐼 Pandas → for small data
+🚀 Dask → for big data (that doesn't fit in RAM)
+
+✅ Why Dask? (Advantages)
+Handles Big Data: Can process datasets larger than memory (RAM).
+
+Scales Easily: Works on your laptop or across a big cluster (cloud, servers).
+
+Parallel Processing: Uses multiple CPU cores automatically.
+
+Compatible with Pandas & NumPy: Very similar syntax (easy to learn).
+
+Lazy Evaluation: Delays computation until needed (like Polars/Spark).
+
+🔥 Key Features of Dask
+Feature	Explanation
+Dask DataFrame	Big data version of Pandas DataFrame
+Dask Array	Big data version of NumPy array
+Dask Delayed	For custom parallel tasks
+Dask Bag	For unstructured data (like text, logs)
+Scalability	Runs on a single laptop or huge clusters
