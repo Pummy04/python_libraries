@@ -1,0 +1,58 @@
+✅ Statsmodels: Theory 
+📚 What is Statsmodels?
+statsmodels is a Python library used for building, analyzing, and interpreting statistical models.
+It’s especially powerful in fields like statistics, econometrics, and data science.
+
+📊 Think of it this way:
+
+Scikit-learn = For machine learning
+
+Statsmodels = For pure statistics and hypothesis testing
+
+🔎 Main Features of Statsmodels
+Linear Models (Regression)
+
+Hypothesis Testing
+
+Time Series Analysis
+
+Statistical Tests (t-test, chi-square test, ANOVA)
+
+Generalized Linear Models (GLM)
+
+✅ Key Concepts (Statsmodels Theory)
+1️⃣ Linear Regression (OLS - Ordinary Least Squares)
+Used for simple and multiple linear regression.
+
+OLS (Ordinary Least Squares) is the most common method in statsmodels.
+import statsmodels.api as sm
+model = sm.OLS(y, X).fit()
+Theory: OLS minimizes the sum of squared errors — meaning it finds the best-fit line by making (y - y_pred)^2 as small as possible.
+
+2️⃣ Hypothesis Testing
+You can perform statistical tests like t-tests, ANOVA, and chi-square tests.
+
+Example:
+from statsmodels.stats.weightstats import ttest_ind
+t_stat, p_value, df = ttest_ind(group1, group2)
+Theory: These tests help check if there is a significant difference between groups (based on the p-value).
+
+3️⃣ Time Series Models
+Includes models like ARIMA, SARIMAX, and Exponential Smoothing for forecasting.
+
+Example:
+from statsmodels.tsa.arima.model import ARIMA
+model = ARIMA(data, order=(1,1,1)).fit()
+Theory: Time series models capture trend + seasonality + noise to predict future values.
+
+4️⃣ Generalized Linear Models (GLM)
+Used when data follows non-normal distributions like Poisson or Binomial.
+
+Logistic Regression is also a type of GLM.
+
+5️⃣ Statistical Tests & Diagnostics
+Durbin-Watson test → Checks for autocorrelation
+
+Breusch-Pagan test → Checks for heteroscedasticity
+
+Jarque-Bera test → Checks for normality
