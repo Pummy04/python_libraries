@@ -1,0 +1,62 @@
+📚 Scrapy:
+Scrapy is an open-source Python framework used for web scraping and web crawling.
+It helps you automatically extract data (like texts, images, links, etc.) from websites.
+
+🔥 Why Use Scrapy?
+It’s fast and asynchronous (meaning it can handle multiple requests at once).
+
+Supports crawling through multiple pages and websites.
+
+Allows you to save scraped data easily into formats like CSV, JSON, XML, or a database.
+
+Built-in tools to handle requests, responses, parsing, and pipelines.
+
+🛠️ How Scrapy Works (Workflow)
+Spider
+👉 The main component where you define what to scrape and from where.
+(Example: A spider that visits an e-commerce website and scrapes product names & prices.)
+
+Scheduler
+👉 Organizes and schedules the URLs (pages) to be crawled next.
+
+Downloader
+👉 Sends HTTP requests to the website and gets back the HTML content (response).
+
+Parser (Selectors)
+👉 Extracts the data you want from the HTML using XPath or CSS selectors.
+
+Item Pipeline
+👉 Cleans, processes, and saves the scraped data to files or databases.
+
+📦 Key Components
+Component	Role
+Spider	Defines the crawling & scraping logic
+Item	Structure to hold scraped data
+Pipeline	Processes and stores the scraped items
+Downloader	Sends requests & receives responses
+Middleware	Hooks to process requests/responses
+
+🔎 Technologies/Concepts Used
+XPath & CSS Selectors — to select and extract data.
+
+Asynchronous Requests — for faster scraping.
+
+Middlewares — to handle cookies, user-agents, proxies, etc.
+
+📂 Scrapy Output Example
+JSON
+
+CSV
+
+XML
+
+SQL database (MySQL, PostgreSQL, etc.)
+
+✅ Real-life Uses of Scrapy
+Price comparison websites
+
+Job listing aggregators
+
+News article scrapers
+
+Market research & business intelligence
