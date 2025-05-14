@@ -1,0 +1,57 @@
+📘 What is openpyxl?
+openpyxl is a Python library that allows you to interact with Excel 2010 and newer .xlsx files. Unlike older libraries like xlrd or xlwt (which work with .xls), openpyxl fully supports the newer Office Open XML format.
+
+✅ Key Features of openpyxl
+Read and write Excel .xlsx files
+You can open existing workbooks or create new ones.
+
+Manipulate cells and data
+Access or modify the value, font, style, formula, or format of any cell.
+
+Sheet management
+Add, delete, rename, or move sheets.
+
+Style formatting
+Change font, size, alignment, colors, borders, etc.
+
+Charts and images
+Create or edit bar charts, line charts, pie charts, and insert images.
+
+Formulas support
+You can read and write formulas (though evaluation must be done in Excel itself).
+
+Data validation and filters
+Add drop-down lists, validation rules, and filters.
+
+🏗️ Architecture and Structure
+An .xlsx file is structured like this:
+
+Workbook → Represents the Excel file.
+
+Worksheet → Individual sheets inside the workbook.
+
+Cell → Each cell contains data, style, and location.
+
+from openpyxl import load_workbook, Workbook
+
+# Create a new workbook
+wb = Workbook()
+
+# Access active worksheet
+ws = wb.active
+
+# Write data to cell
+ws['A1'] = "Hello, Excel!"
+
+# Save the workbook
+wb.save("example.xlsx")
+
+🧰 Commonly Used Classes and Methods
+Class/Method	Description
+Workbook()	Creates a new Excel workbook
+load_workbook(filename)	Loads an existing workbook
+wb.active	Returns the currently active worksheet
+wb.create_sheet()	Adds a new worksheet
+ws['A1'] or ws.cell()	Access a specific cell
+wb.save("file.xlsx")	Saves the workbook to a file
+
